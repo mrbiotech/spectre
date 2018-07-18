@@ -30,8 +30,8 @@ gulp.task('build', function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./dist'))
-    .pipe(gulp.dest('../archer/static/css'))
-    .pipe(gulp.dest('../archer/archer/static/css'));
+    .pipe(gulp.dest('../wagtailcms/static/css'))
+    .pipe(gulp.dest('../wagtailcms/archer/static/css'));
 });
 
 gulp.task('docs', function() {
