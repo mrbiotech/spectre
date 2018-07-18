@@ -29,7 +29,9 @@ gulp.task('build', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('../archer/static/css'))
+    .pipe(gulp.dest('../archer/archer/static/css'));
 });
 
 gulp.task('docs', function() {
