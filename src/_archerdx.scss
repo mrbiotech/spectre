@@ -4,3 +4,22 @@ div.hero-image {
         -o-background-size: cover !important;
            background-size: cover !important;
    }
+ul.list-inline {
+   list-style: none;
+   li {
+      display: inline-block;
+      padding: 0px 10px;
+      }
+   }
+ul.list-unstyled {
+   list-style: none;
+   margin: 16px 0px;
+   padding: 0px;
+   li {
+      margin: 0px;
+      padding: 0px;
+      }
+   }
+footer a {
+   color: $gray-color;
+   }

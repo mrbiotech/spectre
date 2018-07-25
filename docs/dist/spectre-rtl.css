@@ -3642,6 +3642,34 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
+div.hero-image {
+  background-size: cover !important;
+}
+
+ul.list-inline {
+  list-style: none;
+}
+
+ul.list-inline li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+ul.list-unstyled {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+ul.list-unstyled li {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #acb3c2;
+}
+
 /*! Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
 .fa,
 .fas,
