@@ -23,3 +23,44 @@ ul.list-unstyled {
 footer a {
    color: $gray-color;
    }
+p.specification {
+   font-size:32px;
+   font-weight: lighter;
+   line-height:1.1em;
+   }
+p.feature {
+   padding-bottom:30px;
+   }
+
+// Gene grid styles
+div.genegrid {
+   margin:30px 0px;
+   }
+div.genegrid-item {
+   width:150px;
+   height:26px;
+   background: $gray-color-light;
+   border:1px solid #dedede;
+   padding: 0 0.5em;
+   margin:3px;
+   border-radius: 0 50px 50px 0;
+   }
+div.genegrid-item[data-moleculeType=RNA],
+div.moleculetype[data-moleculeType=RNA] {
+   border-left: 3px solid $error-color;
+   }
+div.genegrid-item[data-moleculeType=DNA],
+div.moleculetype[data-moleculeType=DNA] {
+   border-left: 3px solid $primary-color;
+   }
+div.genegrid-item[data-moleculeType=CTDNA],
+div.moleculetype[data-moleculeType=CTDNA] {
+   border-left: 3px solid #09f;
+   }
+.genename {
+   color: $primary-color;
+   font-weight:bolder;
+   margin-left:6px;
+   font-size:12px;
+   }
+

@@ -3669,6 +3669,52 @@ footer a {
   color: #acb3c2;
 }
 
+p.specification {
+  font-size: 32px;
+  font-weight: lighter;
+  line-height: 1.1em;
+}
+
+p.feature {
+  padding-bottom: 30px;
+}
+
+div.genegrid {
+  margin: 30px 0;
+}
+
+div.genegrid-item {
+  background: #e7e9ed;
+  border: 1px solid #dedede;
+  border-radius: 0 50px 50px 0; 
+  height: 26px;
+  margin: 3px;
+  padding: 0 .5em;
+  width: 150px;
+}
+
+div.genegrid-item[data-moleculeType=RNA],
+div.moleculetype[data-moleculeType=RNA] {
+  border-left: 3px solid #ef4135;
+}
+
+div.genegrid-item[data-moleculeType=DNA],
+div.moleculetype[data-moleculeType=DNA] {
+  border-left: 3px solid #1d549f;
+}
+
+div.genegrid-item[data-moleculeType=CTDNA],
+div.moleculetype[data-moleculeType=CTDNA] {
+  border-left: 3px solid #09f;
+}
+
+.genename {
+  color: #1d549f;
+  font-size: 12px; 
+  font-weight: bolder;
+  margin-left: 6px;
+}
+
 /*! Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
 .fa,
 .fas,
