@@ -3641,6 +3641,13 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
+.lead {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.4; 
+  margin-bottom: 22px;
+}
+
 div.hero-image {
   background-size: cover !important;
 }
