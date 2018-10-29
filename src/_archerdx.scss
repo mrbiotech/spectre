@@ -1,6 +1,34 @@
+h1,h2,h3,h4,h5 {
+   // font-family: "Open Sans Condensed","Open Sans","Helvetica Neue",Arial,sans-serif;
+   font-weight:700;
+   }
+div.container#hero {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+/* Hero image gradient style START */
+div#hero div.parallax-window {
+    position: relative;
+}
+div#hero div.parallax-window:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   /* Gradient settings START (can be found at http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+47,0+77) */
+   background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,0) 77%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 47%,rgba(255,255,255,0) 77%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 47%,rgba(255,255,255,0) 77%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+   /* Gradient settings END */
+   pointer-events: none;
+   }
+/* Hero image gradient style END */	
 .lead {
    margin-bottom: 22px;
-   font-size:1.8em;
+   font-size:1.6em;
    font-weight: 300;
    line-height: 1.4;
    }

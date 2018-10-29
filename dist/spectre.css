@@ -555,7 +555,6 @@ dl dd {
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
-  height: 1.8rem;
   line-height: 1.2rem;
   outline: none;
   padding: .25rem .4rem;
@@ -701,13 +700,11 @@ dl dd {
 
 .btn.btn-sm {
   font-size: .7rem;
-  height: 1.4rem;
   padding: .05rem .3rem;
 }
 
 .btn.btn-lg {
   font-size: .9rem;
-  height: 2rem;
   padding: .35rem .6rem;
 }
 
@@ -851,14 +848,6 @@ legend {
 .form-input:focus {
   border-color: #1d549f; 
   box-shadow: 0 0 0 .1rem rgba(29, 84, 159, .2);
-}
-
-.form-input::-webkit-input-placeholder {
-  color: #acb3c2;
-}
-
-.form-input:-ms-input-placeholder {
-  color: #acb3c2;
 }
 
 .form-input::-ms-input-placeholder {
@@ -3641,8 +3630,36 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+div.container#hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Hero image gradient style START */
+div#hero div.parallax-window {
+  position: relative;
+}
+
+div#hero div.parallax-window:before {background: linear-gradient(to right, white 0%, white 47%, rgba(255, 255, 255, 0) 77%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+  bottom: 0;
+  content: "";
+  left: 0; /* Gradient settings START (can be found at http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+47,0+77) */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */  /* IE6-9 */ /* Gradient settings END */ pointer-events: none; 
+  position: absolute;
+  right: 0;
+  top: 0;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+/* Hero image gradient style END */
 .lead {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 300;
   line-height: 1.4; 
   margin-bottom: 22px;
