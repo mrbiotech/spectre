@@ -9,60 +9,128 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="prism.css">
 		<style>
+			h1#pagetitle {
+				font-size: 84px;
+				font-weight: lighter;
+				margin:0;
+				padding:0.5em;
+				color: #777;
+				###        animation: colorchange 30s infinite;
+				###-webkit-animation: colorchange 30s infinite;
+				}
 			.back-to-top-button {
 				position:      fixed;
 				bottom:        -2px;
 				left:          -2px;
-			}
+				}
 			.back-to-top-button:hover {
 				width:         100px;
 				min-width:     100px;
 				height:        100px;
 				font-size:     5em;
-			}
-			.header-gradient {
-				padding:       18px;
-				background:    linear-gradient(-15deg, #b100e2 0%,#00b7ea 100%);
-				        animation: colorchange 50s infinite;
-				-webkit-animation: colorchange 50s infinite;
-			}
+				}
+			header.navbar,
+			div.header-stripe {
+				background: #333333;
+				border-bottom: 4px solid #c1c1c1;
+				padding:18px;
+				color: white !important;
+				}
+			div.header-stripe h2,
+			div.header-stripe h3,
+			div.header-stripe h4,
+			div.header-stripe h5,
+			div.header-stripe h6 {
+				font-size: 48px;
+				font-weight: lighter;
+				}
+			.underlinered {border-bottom: 5px solid #ef4135 !important;}
+			.underlineorange {border-bottom: 5px solid #ed9a36 !important;}
+			.underlinegreen {border-bottom: 5px solid #4cad29 !important;}
+			.underlineblue {border-bottom: 5px solid #34abe2 !important;}
+			.underlinepurple {border-bottom: 5px solid #5a35e0 !important;}
+			header a, header a.dropdown-toggle {
+				color: white !important;
+				}
+			header li.menu-item a {
+				color: #555555 !important;
+				}
 			.header-gradient a.dropdown-toggle {
 				color:         white !important;
-			}
+				}
 			.header-gradient .navbar-section .navbar-brand {
 			 rgba(255,255,255,0.35);
 				font-size: 1.5em;
 				font-weight: bolder;
 				text-shadow: 0px 0px 10px rgba(255,255,255,0.25);
-			}
+				}
+			div.columns div.column.col-2.text-right {
+				background: #ef4135;
+				background: -moz-linear-gradient(-45deg, #ef4135 0%, #ea35b7 100%);
+				background: -webkit-linear-gradient(-45deg, #ef4135 0%,#ea35b7 100%);
+				background: linear-gradient(135deg, #ef4135 0%,#ea35b7 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4135', endColorstr='#ea35b7',GradientType=1 );
+				color: white !important;
+				}
+			div.columns div.column.col-2.text-right.orange {
+				background: #ed9a36;
+				background: -moz-linear-gradient(-45deg, #ed9a36 0%, #eacf35 100%);
+				background: -webkit-linear-gradient(-45deg, #ed9a36 0%,#eacf35 100%);
+				background: linear-gradient(135deg, #ed9a36 0%,#eacf35 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9a36', endColorstr='#eacf35',GradientType=1 );				}
+			div.columns div.column.col-2.text-right.green {
+				background: #4cad29;
+				background: -moz-linear-gradient(-45deg, #4cad29 0%, #34e5c8 100%);
+				background: -webkit-linear-gradient(-45deg, #4cad29 0%,#34e5c8 100%);
+				background: linear-gradient(135deg, #4cad29 0%,#34e5c8 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cad29', endColorstr='#34e5c8',GradientType=1 );
+				}
+			div.columns div.column.col-2.text-right.blue {
+				background: #34abe2;
+				background: -moz-linear-gradient(-45deg, #34abe2 0%, #7e34e5 100%);
+				background: -webkit-linear-gradient(-45deg, #34abe2 0%,#7e34e5 100%);
+				background: linear-gradient(135deg, #34abe2 0%,#7e34e5 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34abe2', endColorstr='#7e34e5',GradientType=1 );
+				}
+			div.columns div.column.col-2.text-right.purple {
+				background: #5a35e0;
+				background: -moz-linear-gradient(-45deg, #5a35e0 0%, #bf34e2 100%);
+				background: -webkit-linear-gradient(-45deg, #5a35e0 0%,#bf34e2 100%);
+				background: linear-gradient(135deg, #5a35e0 0%,#bf34e2 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a35e0', endColorstr='#bf34e2',GradientType=1 );				}			
+			div.columns div.column.col-2 h3 {
+				font-size: 42px;
+				font-weight: lighter;
+				color: white;
+				}
 			@keyframes colorchange {
-				0%    {background: #b100e2;}
-				20%   {background: violet;}
-				40%   {background: #ff6600;}
-				50%   {background: #eeaa00;}
-				60%   {background: mediumaquamarine;}
-				80%   {background: #00b7ea;}
-				100%  {background: #b100e2;}
-			}
+				0%    {color: #b100e2;}
+				20%   {color: #00b7ea;}
+				40%   {color: mediumaquamarine;}
+				50%   {color: #eeaa00;}
+				60%   {color: #ff6600;}
+				80%   {color: violet;}
+				100%  {color: #b100e2;}
+				}
 			@-webkit-keyframes colorchange {
-				0%    {background: #b100e2;}
-				20%   {background: violet;}
-				40%   {background: #ff6600;}
-				50%   {background: #eeaa00;}
-				60%   {background: mediumaquamarine;}
-				80%   {background: #00b7ea;}
-				100%  {background: #b100e2;}
-			}
+				0%    {color: #b100e2;}
+				20%   {color: #00b7ea;}
+				40%   {color: mediumaquamarine;}
+				50%   {color: #eeaa00;}
+				60%   {color: #ff6600;}
+				80%   {color: violet;}
+				100%  {color: #b100e2;}
+				}
 		</style>
 	</head>
 	<body id="top">
-		<header class="navbar header-gradient">
+		<header class="navbar">
 			<section class="navbar-section">
-				<a class="navbar-brand mr-2" href="#top">Spectre.CSS</a>
+				<a class="navbar-brand mr-2" href="#top">ArcherDX 2019 online styles</a>
 			</section>
 			<section class="navbar-section">
 				<div class="dropdown">
-					<a class="btn btn-link dropdown-toggle" tabindex="0">Elements <i class="icon icon-caret"></i></a>
+					<a class="btn btn-link dropdown-toggle underlinered" tabindex="0">Elements <i class="icon icon-caret"></i></a>
 					<ul class="menu">
 						<li class="menu-item"><a href="#Typography">Typography</a></li>
 						<li class="menu-item"><a href="#Tables">Tables</a></li>
@@ -75,7 +143,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<a class="btn btn-link dropdown-toggle" tabindex="1">Layout <i class="icon icon-caret"></i></a>
+					<a class="btn btn-link dropdown-toggle underlineorange" tabindex="1">Layout <i class="icon icon-caret"></i></a>
 					<ul class="menu">
 						<li class="menu-item"><a href="#Flexbox grid">Flexbox grid</a></li>
 						<li class="menu-item"><a href="#Responsive">Responsive</a></li>
@@ -83,7 +151,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<a class="btn btn-link dropdown-toggle" tabindex="2">Components <i class="icon icon-caret"></i></a>
+					<a class="btn btn-link dropdown-toggle underlinegreen" tabindex="2">Components <i class="icon icon-caret"></i></a>
 					<ul class="menu">
 						<li class="menu-item"><a href="#Accordions">Accordions</a></li>
 						<li class="menu-item"><a href="#Avatars">Avatars</a></li>
@@ -107,7 +175,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<a class="btn btn-link dropdown-toggle" tabindex="3">Utilities <i class="icon icon-caret"></i></a>
+					<a class="btn btn-link dropdown-toggle underlineblue" tabindex="3">Utilities <i class="icon icon-caret"></i></a>
 					<ul class="menu">
 						<li class="menu-item"><a href="#Color utilities">Color utilities</a></li>
 						<li class="menu-item"><a href="#Cursor utilities">Cursor utilities</a></li>
@@ -120,7 +188,7 @@
 					</ul>
 				</div>
 				<div class="dropdown">
-					<a class="btn btn-link dropdown-toggle" tabindex="4">Experimentals <i class="icon icon-caret"></i></a>
+					<a class="btn btn-link dropdown-toggle underlinepurple" tabindex="4">Experimentals <i class="icon icon-caret"></i></a>
 					<ul class="menu">
 						<li class="menu-item"><a href="#Autocomplete">Autocomplete</a></li>
 						<li class="menu-item"><a href="#Calendars">Calendars</a></li>
@@ -138,9 +206,9 @@
 			</section>
 		</header>
 
-		<h1>Spectre.CSS Kitchen Sink</h1>
+		<h1 id="pagetitle">ArcherDX 2019<br><span class="text-right">online style kitchen sink</span></h1>
 		
-		<h2 id="elements">Elements</h2>
+		<div class="header-stripe underlinered"><h2 id="elements">Elements</h2></div>
 
 		<!-- Contains H3 headers and greater
 		div.columns>(div.column.col-2.text-right>h3)+div.divider-vert+div.column.col-9>div.columns>div.column.col-6+div.column.col-6>pre.line-numbers>code.lang-html
@@ -157,8 +225,13 @@
 				<div class="columns">
 					<div class="column col-5">
 						<h1>H1 Heading</h1>
-						<h1>H1 Heading <small class="label">40px</small></h1>
-						<span class="h1">H1 Heading</span>
+						<h1>H1 with <small class="label">&lt;small text&gt;</small></h1>
+						<span class="h1">&lt;span&gt; with "h1" class</span>
+						<h2>H2 heading</h2>
+						<h3>H3 heading</h3>
+						<h4>H4 heading</h4>
+						<h5>H5 heading</h5>
+						<h6>H6 heading</h6>
 					</div>
 					<div class="column col-7">
 						<pre class="line-numbers"><code class="lang-html">
@@ -1547,20 +1620,20 @@
 			<div class="divider-vert"></div>
 			<div class="column col-9">
 				<div class="columns">
-					<div class="column col-5">
+					<div class="column col-6">
 						<p><code>Here's inline code formatting</code>.</p>
 						<pre data-lang="html">
-		&lt;div class=&quot;columns&quot;&gt;
-			&lt;div class=&quot;column col-6&quot;&gt;
-				&lt;h2&gt;Some sample HTML&lt;/h2&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;column col-6&quot;&gt;
-				&lt;p&gt;Poop.&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+	&lt;div class=&quot;column col-6&quot;&gt;
+		&lt;h2&gt;Some sample HTML&lt;/h2&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;column col-6&quot;&gt;
+		&lt;p&gt;Poop.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 						</pre>
 					</div>
-					<div class="column col-7">
+					<div class="column col-6">
 						<pre class="line-numbers"><code class="language-html">
 						&lt;p&gt;&lt;code&gt;Here's inline code formatting&lt;/code&gt;.&lt;/p&gt;
 						&lt;pre data-lang=&quot;html&quot;&gt;
@@ -1589,23 +1662,25 @@
 			</div>
 			<div class="divider-vert"></div>
 			<div class="column col-9">
-				<h4>Images</h4>
-				<ul>
-					<li><code class="lang-html">img-responsive</code></li>
-					<li><code class="lang-html">img-fit-contain</code> for background image trick</li>
-					<li><code class="lang-html">img-fit-cover</code> for background image trick</li>
-					<li>The above classes work on <code class="lang-html">&lt;img&gt;</code> and <code class="lang-html">&lt;video&gt;</code> elements</li>
-				</ul>
 				<div class="columns">
-					<div class="column col-7">
-						<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-responsive">
+					<div class="column col-6">
+						<h4>Images and video</h4>
+						<ul>
+							<li><code class="lang-html">img-responsive</code></li>
+							<li><code class="lang-html">img-fit-contain</code> for background image trick</li>
+							<li><code class="lang-html">img-fit-cover</code> for background image trick</li>
+							<li>The above classes work on <code class="lang-html">&lt;img&gt;</code> and <code class="lang-html">&lt;video&gt;</code> elements</li>
+						</ul>
 					</div>
-					<div class="column col-5">
+					<div class="column col-6">
+						<h5><code>img-responsive</code> class</h5>
 						<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-responsive">
-						<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-fit-contain">
-						<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-fit-cover">
 					</div>
 				</div>
+				<h5><code>img-fit-contain</code> class</h5>
+				<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class=" img-fit-contain">
+				<h5><code>img-fit-cover</code> class</h5>
+				<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class=" img-fit-cover">
 
 				<h4>Figures</h4>
 				<div class="columns">
@@ -1657,16 +1732,18 @@
 		<br>
 
 
-		<h2 id="layout">Layout</h2>
+		<div class="header-stripe underlineorange">
+			<h2 id="layout">Layout</h2>
+			<p>Flexbox grid columns can use the standard 12-column grid, but also use arbitrary columns (they'll all be equally spaced out). The latter option gives us the capability of doing 5, 7 or 11 columns equally spaced!</p>
+		</div>
 		
 		<!-- Flexbox Grid -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right orange">
 				<h3 id="Flexbox grid">Flexbox grid</h3>
 			</div>
 			<div class="divider-vert"></div>
 			<div class="column col-9">
-				<p>Flexbox grid columns can use the standard 12-column grid, but also use arbitrary columns (they'll all be equally spaced out). The latter option gives us the capability of doing 5, 7 or 11 columns equally spaced!</p>
 				<div class="columns">
 					<div class="column bg-dark">
 						<p>Here's your first column, yo.</p>
@@ -2091,7 +2168,7 @@
 
 		<!-- Responsive -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right orange">
 				<h3 id="Responsive">Responsive</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -2499,7 +2576,7 @@
 
 		<!-- Navbar -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right orange">
 				<h3 id="Navbar">Navbar</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -2553,11 +2630,11 @@
 
 
 
-		<h2 id="components">Components</h2>
+		<div class="header-stripe underlinegreen"><h2 id="components">Components</h2></div>
 
 		<!-- Accordions -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Accordions">Accordions</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -2750,7 +2827,7 @@
 
 		<!-- Avatars -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Avatars">Avatars</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -2983,7 +3060,7 @@
 
 		<!-- Badges -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Badges">Badges</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3068,7 +3145,7 @@
 
 		<!-- Bars -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Bars">Bars</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3145,7 +3222,7 @@
 
 		<!-- Breadcrumbs -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Breadcrumbs">Breadcrumbs</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3188,7 +3265,7 @@
 
 		<!-- Cards -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Cards">Cards</h3>
 				<p>Nice-looking multi-purpose containers</p>
 			</div>
@@ -3246,7 +3323,7 @@
 
 		<!-- Chips -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Chips">Chips</h3>
 				<p>Packing multiple media types in a compact widget</p>
 			</div>
@@ -3288,7 +3365,7 @@
 
 		<!-- Empty states -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Empty states">Empty states</h3>
 				<p>It's like visual <em>Lorem ipsum</em></p>
 			</div>
@@ -3337,7 +3414,7 @@
 
 		<!-- Menus -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Menu">Menu</h3>
 				<p>How do you menu?</p>
 			</div>
@@ -3581,7 +3658,7 @@
 
 		<!-- Modals -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Modals">Modals</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3656,7 +3733,7 @@
 
 		<!-- Navs -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Nav">Nav</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3733,7 +3810,7 @@
 
 		<!-- Pagination -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Pagination">Pagination</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -3839,7 +3916,7 @@
 
 		<!-- Panels -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Panels">Panels</h3>
 				<p>Another fancy-pants presentational container.</p>
 			</div>
@@ -4080,7 +4157,7 @@
 
 		<!-- Popovers -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Popovers">Popovers</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4179,7 +4256,7 @@
 
 		<!-- Steps -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Steps">Steps</h3>
 				<p>Follow these easy steps to create your own.</p>
 			</div>
@@ -4256,7 +4333,7 @@
 
 		<!-- Tabs -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Tabs">Tabs</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4387,7 +4464,7 @@
 
 		<!-- Tiles -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Tiles">Tiles</h3>
 				<p>Repeating or embeddable information blocks.</p>
 			</div>
@@ -4538,7 +4615,7 @@
 
 		<!-- Toasts/Alerts -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Toasts (Alerts)">Toasts (Alerts)</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4601,7 +4678,7 @@
 
 		<!-- Tooltips -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right green">
 				<h3 id="Tooltips">Tooltips</h3>
 				<p>Like <a href="#Popovers">Popovers</a>, only weak sauce.</p>
 			</div>
@@ -4640,11 +4717,11 @@
 
 
 
-		<h2 id="utilities">Utilities</h2>
+		<div class="header-stripe underlineblue"><h2 id="utilities">Utilities</h2></div>
 		
 		<!-- Color utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Color utilities">Color utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4728,7 +4805,7 @@
 		
 		<!-- Cursor utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Cursor utilities">Cursor utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4803,7 +4880,7 @@
 
 		<!-- Display utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Display utilities">Display utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4839,7 +4916,7 @@
 
 		<!-- Dividers -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Dividers">Dividers</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4894,7 +4971,7 @@
 
 		<!-- Loading -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Loading">Loading</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4909,7 +4986,7 @@
 		
 		<!-- Position utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Position utilities">Position utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4958,7 +5035,7 @@
 
 		<!-- Shape utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Shape utilities">Shape utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -4988,7 +5065,7 @@
 
 		<!-- Text utilities -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right blue">
 				<h3 id="Text utilities">Text utilities</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -5090,12 +5167,14 @@
 		<br>
 
 
-		<h2 id="experimentals">Experimentals</h2>
-		<p>To use these, need to include the <code>spectre-exp.css</code> CSS file!</p>
+		<div class="header-stripe underlinepurple">
+			<h2 id="experimentals">Experimentals</h2>
+			<p>To use these, need to include the <code>spectre-exp.css</code> CSS file!</p>
+		</div>
 
 		<!-- Autocomplete -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Autocomplete">Autocomplete</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -5114,15 +5193,354 @@
 
 		<!-- Calendars -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Calendars">Calendars</h3>
 			</div>
 			<div class="divider-vert"></div>
 			<div class="column col-9">
 				<div class="columns">
-					<div class="column col-6"></div>
 					<div class="column col-6">
-						<pre class="line-numbers"><code class="lang-html"></code></pre>
+						<h3>Default calendar</h3>
+						<p>This example shows an event, current date and date range.</p>
+						<div class="calendar">
+							<div class="calendar-nav navbar">
+								<button class="btn btn-action btn-link btn-lg"><i class="icon icon-arrow-left"></i></button>
+								<div class="navbar-primary">March 2017</div>
+								<button class="btn btn-action btn-link btn-lg"><i class="icon icon-arrow-right"></i></button>
+							</div>
+							<div class="calendar-container">
+								<div class="calendar-header">
+									<div class="calendar-date">Sun</div>
+									<div class="calendar-date">Mon</div>
+									<div class="calendar-date">Tue</div>
+									<div class="calendar-date">Wed</div>
+									<div class="calendar-date">Thu</div>
+									<div class="calendar-date">Fri</div>
+									<div class="calendar-date">Sat</div>
+								</div>
+								<div class="calendar-body">
+									<div class="calendar-date prev-month">
+										<button class="date-item">26</button>
+									</div>
+									<div class="calendar-date prev-month">
+										<button class="date-item">27</button>
+									</div>
+									<div class="calendar-date prev-month">
+										<button class="date-item">28</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">1</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">2</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">3</button>
+									</div>
+									<div class="calendar-date tooltip" data-tooltip="Today">
+										<button class="date-item date-today">4</button>
+									</div>
+									<div class="calendar-date tooltip" data-tooltip="Not available">
+										<button class="date-item" disabled="">5</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">6</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">7</button>
+									</div>
+									<div class="calendar-date tooltip" data-tooltip="You have appointments">
+										<button class="date-item badge">8</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">9</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">10</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">11</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">12</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">13</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">14</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">15</button>
+									</div>
+									<div class="calendar-date calendar-range range-start">
+										<button class="date-item">16</button>
+									</div>
+									<div class="calendar-date calendar-range">
+										<button class="date-item">17</button>
+									</div>
+									<div class="calendar-date calendar-range">
+										<button class="date-item">18</button>
+									</div>
+									<div class="calendar-date calendar-range">
+										<button class="date-item">19</button>
+									</div>
+									<div class="calendar-date calendar-range range-end">
+										<button class="date-item">20</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">21</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">22</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">23</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">24</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">25</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">26</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">27</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">28</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">29</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">30</button>
+									</div>
+									<div class="calendar-date">
+										<button class="date-item">31</button>
+									</div>
+									<div class="calendar-date next-month">
+										<button class="date-item">1</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column col-6">
+						<pre class="line-numbers"><code class="lang-html">
+						&lt;div class=&quot;calendar&quot;&gt;
+							&lt;!-- calendar navbar --&gt;
+							&lt;div class=&quot;calendar-nav navbar&quot;&gt;
+								&lt;button class=&quot;btn btn-action btn-link btn-lg&quot;&gt;
+									&lt;i class=&quot;icon icon-arrow-left&quot;&gt;&lt;/i&gt;
+								&lt;/button&gt;
+								&lt;div class=&quot;navbar-primary&quot;&gt;March 2017&lt;/div&gt;
+								&lt;button class=&quot;btn btn-action btn-link btn-lg&quot;&gt;
+									&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;
+								&lt;/button&gt;
+							&lt;/div&gt;
+
+							&lt;div class=&quot;calendar-container&quot;&gt;
+								&lt;div class=&quot;calendar-header&quot;&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Sun&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Mon&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Tue&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Wed&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Thu&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Fri&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;Sat&lt;/div&gt;
+								&lt;/div&gt;
+
+								&lt;div class=&quot;calendar-body&quot;&gt;
+									&lt;!-- calendar previous month --&gt;
+									&lt;div class=&quot;calendar-date prev-month&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;26&lt;/button&gt;
+									&lt;/div&gt;
+									...
+									&lt;div class=&quot;calendar-date prev-month&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;28&lt;/button&gt;
+									&lt;/div&gt;
+
+									&lt;!-- calendar current month --&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;1&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;2&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;3&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;!-- calendar date: today --&gt;
+									&lt;div class=&quot;calendar-date&quot;&gt;
+										&lt;button class=&quot;date-item date-today&quot;&gt;4&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;!-- calendar date: tooltip --&gt;
+									&lt;div class=&quot;calendar-date tooltip&quot; data-tooltip=&quot;You have appointments&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;5&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;!-- calendar date: not available --&gt;
+									&lt;div class=&quot;calendar-date tooltip&quot; data-tooltip=&quot;Not available&quot;&gt;
+										&lt;button class=&quot;date-item&quot; disabled=&quot;&quot;&gt;6&lt;/button&gt;
+									&lt;/div&gt;
+
+									&lt;!-- calendar range --&gt;
+									&lt;div class=&quot;calendar-date calendar-range range-start&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;7&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;div class=&quot;calendar-date calendar-range&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;8&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;div class=&quot;calendar-date calendar-range range-end&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;9&lt;/button&gt;
+									&lt;/div&gt;
+									...
+									&lt;div class=&quot;calendar-date&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;31&lt;/button&gt;
+									&lt;/div&gt;
+
+									&lt;!-- calendar next month --&gt;
+									&lt;div class=&quot;calendar-date next-month&quot;&gt;
+										&lt;button class=&quot;date-item&quot;&gt;1&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						</code></pre>
+					</div>
+				</div>
+				<h3>Large calendar</h3>
+				<p>Add the class <code>calendar-lg</code> to <code>div.calendar</code></p>
+				<div class="calendar calendar-lg">
+					<div class="calendar-nav navbar">
+						<button class="btn btn-action btn-link btn-lg"><i class="icon icon-arrow-left"></i></button>
+						<div class="navbar-primary">March 2017</div>
+						<button class="btn btn-action btn-link btn-lg"><i class="icon icon-arrow-right"></i></button>
+					</div>
+					<div class="calendar-container">
+						<div class="calendar-header">
+							<div class="calendar-date">Sun</div>
+							<div class="calendar-date">Mon</div>
+							<div class="calendar-date">Tue</div>
+							<div class="calendar-date">Wed</div>
+							<div class="calendar-date">Thu</div>
+							<div class="calendar-date">Fri</div>
+							<div class="calendar-date">Sat</div>
+						</div>
+						<div class="calendar-body">
+							<div class="calendar-date prev-month">
+								<button class="date-item">26</button>
+							</div>
+							<div class="calendar-date prev-month">
+								<button class="date-item">27</button>
+								<div class="calendar-events"><a class="calendar-event bg-error text-light" href="#calendars">Zhonghe Festival</a></div>
+							</div>
+							<div class="calendar-date prev-month">
+								<button class="date-item">28</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">1</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">2</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">3</button>
+							</div>
+							<div class="calendar-date tooltip" data-tooltip="Today">
+								<button class="date-item date-today">4</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item" disabled="">5</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">6</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">7</button>
+							</div>
+							<div class="calendar-date tooltip" data-tooltip="You have appointments">
+								<button class="date-item badge">8</button>
+								<div class="calendar-events"><a class="calendar-event bg-primary text-light" href="#calendars">Product launch event</a><a class="calendar-event bg-error text-light" href="#calendars">International Women's Day</a></div>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">9</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">10</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">11</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">12</button>
+								<div class="calendar-events"><a class="calendar-event bg-error text-light" href="#calendars">Arbor Day</a></div>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">13</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">14</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">15</button>
+							</div>
+							<div class="calendar-date calendar-range range-start">
+								<button class="date-item">16</button>
+							</div>
+							<div class="calendar-date calendar-range">
+								<button class="date-item">17</button>
+							</div>
+							<div class="calendar-date calendar-range">
+								<button class="date-item">18</button>
+							</div>
+							<div class="calendar-date calendar-range">
+								<button class="date-item">19</button>
+							</div>
+							<div class="calendar-date calendar-range range-end">
+								<button class="date-item">20</button>
+								<div class="calendar-events"><a class="calendar-event bg-success text-light" href="#calendars">Spring Equinox</a></div>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">21</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">22</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">23</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">24</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">25</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">26</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">27</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">28</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">29</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">30</button>
+							</div>
+							<div class="calendar-date">
+								<button class="date-item">31</button>
+							</div>
+							<div class="calendar-date next-month disabled">
+								<button class="date-item">1</button>
+								<div class="calendar-events"><a class="calendar-event bg-error text-light" href="#calendars">April Fools' Day</a></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -5133,7 +5551,7 @@
 
 		<!-- Carousels -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Carousels">Carousels</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -5219,7 +5637,7 @@
 
 		<!-- Comparison sliders -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Comparison sliders">Comparison sliders</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -5253,7 +5671,7 @@
 
 		<!-- Filters -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Filters">Filters</h3>
 			</div>
 			<div class="divider-vert"></div>
@@ -5493,7 +5911,7 @@
 
 		<!-- Meters -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Meters">Meters</h3>
 				<p>Seems redundant with progress bars, don't it?</p>
 			</div>
@@ -5535,7 +5953,7 @@
 
 		<!-- Off-canvas -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Off-canvas">Off-canvas</h3>
 				<p>It's a menu/sidebar that lives offscreen and gets summoned at your command!</p>
 			</div>
@@ -5645,7 +6063,7 @@
 
 		<!-- Parallax -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Parallax">Parallax</h3>
 				<p><strong>Hover over that image <i class="icon icon-arrow-right"></i></strong></p>
 				<p>Shamelessly mimics the Apple TV/tvOS hover effect.</p>
@@ -5691,7 +6109,7 @@
 
 		<!-- Progress -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Progress">Progress</h3>
 				<p>Another semi-redundant element with progress bars.</p>
 			</div>
@@ -5723,7 +6141,7 @@
 
 		<!-- Sliders -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Sliders">Sliders</h3>
 				<p>Interactive sliders.</p>
 			</div>
@@ -5755,7 +6173,7 @@
 
 		<!-- Timelines -->
 		<div class="columns">
-			<div class="column col-2 text-right">
+			<div class="column col-2 text-right purple">
 				<h3 id="Timelines">Timelines</h3>
 			</div>
 			<div class="divider-vert"></div>
