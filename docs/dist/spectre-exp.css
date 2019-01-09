@@ -874,11 +874,7 @@
 
 .progress:indeterminate {
   animation: progress-indeterminate 1.5s linear infinite;
-<<<<<<< HEAD
-  background: #f0f1f4 linear-gradient(to right, #1d549f 30%, #f0f1f4 30%) top left/150% 150% no-repeat;
-=======
-  background: #eef0f3 linear-gradient(to right, #5755d9 30%, #eef0f3 30%) top left/150% 150% no-repeat;
->>>>>>> 2513e31f732794e54f62edaf3fde9fe5ab129dfe
+  background: #eef0f3 linear-gradient(to right, #1d549f 30%, #eef0f3 30%) top left/150% 150% no-repeat;
 }
 
 .progress:indeterminate::-moz-progress-bar {

@@ -22,11 +22,19 @@
 				position:      fixed;
 				bottom:        -2px;
 				left:          -2px;
+				height:        42px;
+				width:         42px;
+				min-height:    42px;
+				min-width:     42px;
+				font-size:     1em;
+				transition:    all 0.5s ease-in-out;
+				border-top-right-radius: 10px;
 				}
 			.back-to-top-button:hover {
 				width:         100px;
 				min-width:     100px;
 				height:        100px;
+				min-height:    100px;
 				font-size:     5em;
 				}
 			header.navbar,
@@ -71,6 +79,10 @@
 				background: linear-gradient(135deg, #ef4135 0%,#ea35b7 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4135', endColorstr='#ea35b7',GradientType=1 );
 				color: white !important;
+				}
+			div.columns div.column.col-2.text-right h3 {
+				font-size: 28px;
+				letter-spacing: 0.05em;
 				}
 			div.columns div.column.col-2.text-right.orange {
 				background: #ed9a36;
@@ -148,6 +160,7 @@
 						<li class="menu-item"><a href="#Flexbox grid">Flexbox grid</a></li>
 						<li class="menu-item"><a href="#Responsive">Responsive</a></li>
 						<li class="menu-item"><a href="#Navbar">Navbar</a></li>
+						<li class="menu-item"><a href="#Hero">Hero</a></li>
 					</ul>
 				</div>
 				<div class="dropdown">
@@ -190,6 +203,7 @@
 				<div class="dropdown">
 					<a class="btn btn-link dropdown-toggle underlinepurple" tabindex="4">Experimentals <i class="icon icon-caret"></i></a>
 					<ul class="menu">
+						<li class="menu-item"><a href="#view360">360 viewer</a></li>
 						<li class="menu-item"><a href="#Autocomplete">Autocomplete</a></li>
 						<li class="menu-item"><a href="#Calendars">Calendars</a></li>
 						<li class="menu-item"><a href="#Carousels">Carousels</a></li>
@@ -235,9 +249,14 @@
 					</div>
 					<div class="column col-7">
 						<pre class="line-numbers"><code class="lang-html">
-							&lt;h1&gt;H1 Heading&lt;/h1&gt;
-							&lt;h1&gt;H1 Heading &lt;small class=&quot;label&quot;&gt;40px&lt;/small&gt;&lt;/h1&gt;
-							&lt;span class=&quot;h1&quot;&gt;H1 Heading&lt;/span&gt;
+						&lt;h1&gt;H1 Heading&lt;/h1&gt;
+						&lt;h1&gt;H1 with &lt;small class=&quot;label&quot;&gt;&amp;lt;small text&amp;gt;&lt;/small&gt;&lt;/h1&gt;
+						&lt;span class=&quot;h1&quot;&gt;&amp;lt;span&amp;gt; with &quot;h1&quot; class&lt;/span&gt;
+						&lt;h2&gt;H2 heading&lt;/h2&gt;
+						&lt;h3&gt;H3 heading&lt;/h3&gt;
+						&lt;h4&gt;H4 heading&lt;/h4&gt;
+						&lt;h5&gt;H5 heading&lt;/h5&gt;
+						&lt;h6&gt;H6 heading&lt;/h6&gt;
 						</code></pre>
 					</div>
 				</div>
@@ -672,25 +691,25 @@
 					</div>
 					<div class="column col-6">
 						<h4>Round action buttons</h4>
-						<a href="" class="btn btn-action circle btn-lg"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle btn-lg active"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle btn-lg disabled"><i class="icon icon-arrow-right"></i></a><br>
-						<a href="" class="btn btn-action circle"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle active"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle disabled"><i class="icon icon-arrow-right"></i></a><br>
-						<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle btn-sm active"><i class="icon icon-arrow-right"></i></a>
-						<a href="" class="btn btn-action circle btn-sm disabled"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action btn-lg s-circle"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action btn-lg s-circle active"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action btn-lg s-circle disabled"><i class="icon icon-arrow-right"></i></a><br>
+						<a href="" class="btn btn-action s-circle"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action s-circle active"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action s-circle disabled"><i class="icon icon-arrow-right"></i></a><br>
+						<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action btn-sm s-circle active"><i class="icon icon-arrow-right"></i></a>
+						<a href="" class="btn btn-action btn-sm s-circle disabled"><i class="icon icon-arrow-right"></i></a>
 						<pre class="line-numbers"><code class="language-html">
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-lg&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-lg active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-lg disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-sm&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-sm active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;a href=&quot;&quot; class=&quot;btn btn-action circle btn-sm disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action s-circle btn-lg&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action s-circle btn-lg active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action btn-lg s-circle disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action s-circle&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action s-circle active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action s-circle disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action btn-sm s-circle&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action btn-sm s-circle active&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-action btn-sm s-circle disabled&quot;&gt;&lt;i class=&quot;icon icon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 						</code></pre>
 					</div>
 					<div class="column col-6">
@@ -1346,61 +1365,61 @@
 				<h4>Navigation icons</h4>
 				<div class="columns">
 					<div class="column col-3 text-center">
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-arrow-up"></i>
 						</button>
 						<p>icon-arrow-up</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-arrow-right"></i>
 						</button>
 						<p>icon-arrow-right</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-arrow-down"></i>
 						</button>
 						<p>icon-arrow-down</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-arrow-left"></i>
 						</button>
 						<p>icon-arrow-left</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-upward"></i>
 						</button>
 						<p>icon-upward</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-forward"></i>
 						</button>
 						<p>icon-forward</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-downward"></i>
 						</button>
 						<p>icon-downward</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-back"></i>
 						</button>
 						<p>icon-back</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-caret"></i>
 						</button>
 						<p>icon-caret</p>
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-menu"></i>
 						</button>
 						<p>icon-menu</p>
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-apps"></i>
 						</button>
 						<p>icon-apps</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-more-horiz"></i>
 						</button>
 						<p>icon-more-horiz</p>
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-more-vert"></i>
 						</button>
 						<p>icon-more-vert</p>
@@ -1409,77 +1428,77 @@
 				<h4>Action icons</h4>
 				<div class="columns">
 					<div class="column col-3 text-center">
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-resize-horiz"></i>
 						</button>
 						<p>icon-resize-horiz</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-resize-vert"></i>
 						</button>
 						<p>icon-resize-vert</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-plus"></i>
 						</button>
 						<p>icon-plus</p>
-						<button class="btn btn-action circle btn-lg">
+						<button class="btn btn-action btn-lg s-circle">
 							<i class="icon icon-minus"></i>
 						</button>
 						<p>icon-minus</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-cross"></i>
 						</button>
 						<p>icon-cross</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-check"></i>
 						</button>
 						<p>icon-check</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-stop"></i>
 						</button>
 						<p>icon-stop</p>
-						<button class="btn btn-primary btn-action circle btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-circle">
 							<i class="icon icon-shutdown"></i>
 						</button>
 						<p>icon-shutdown</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-refresh"></i>
 						</button>
 						<p>icon-refresh</p>
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-search"></i>
 						</button>
 						<p>icon-search</p>
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-flag"></i>
 						</button>
 						<p>icon-flag</p>
-						<button class="btn btn-success btn-action circle btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-circle">
 							<i class="icon icon-bookmark"></i>
 						</button>
 						<p>icon-bookmark</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-edit"></i>
 						</button>
 						<p>icon-edit</p>
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-delete"></i>
 						</button>
 						<p>icon-delete</p>
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-share"></i>
 						</button>
 						<p>icon-share</p>
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-download"></i>
 						</button>
 						<p>icon-download</p>
-						<button class="btn btn-error btn-action circle btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-circle">
 							<i class="icon icon-upload"></i>
 						</button>
 						<p>icon-upload</p>
@@ -1488,41 +1507,41 @@
 				<h4>Object icons</h4>
 				<div class="columns">
 					<div class="column col-3 text-center">
-						<button class="btn btn-action btn-lg">
+						<button class="btn btn-action btn-lg s-rounded">
 							<i class="icon icon-mail"></i>
 						</button>
 						<p>icon-mail</p>
-						<button class="btn btn-action btn-lg">
+						<button class="btn btn-action btn-lg s-rounded">
 							<i class="icon icon-time"></i>
 						</button>
 						<p>icon-time</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-primary btn-action btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-rounded">
 							<i class="icon icon-people"></i>
 						</button>
 						<p>icon-people</p>
-						<button class="btn btn-primary btn-action btn-lg">
+						<button class="btn btn-primary btn-action btn-lg s-rounded">
 							<i class="icon icon-location"></i>
 						</button>
 						<p>icon-location</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-success btn-action btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-rounded">
 							<i class="icon icon-message"></i>
 						</button>
 						<p>icon-message</p>
-						<button class="btn btn-success btn-action btn-lg">
+						<button class="btn btn-success btn-action btn-lg s-rounded">
 							<i class="icon icon-link"></i>
 						</button>
 						<p>icon-link</p>
 					</div>
 					<div class="column col-3 text-center">
-						<button class="btn btn-error btn-action btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-rounded">
 							<i class="icon icon-photo"></i>
 						</button>
 						<p>icon-photo</p>
-						<button class="btn btn-error btn-action btn-lg">
+						<button class="btn btn-error btn-action btn-lg s-rounded">
 							<i class="icon icon-emoji"></i>
 						</button>
 						<p>icon-emoji</p>
@@ -1623,28 +1642,28 @@
 					<div class="column col-6">
 						<p><code>Here's inline code formatting</code>.</p>
 						<pre data-lang="html">
-&lt;div class=&quot;columns&quot;&gt;
-	&lt;div class=&quot;column col-6&quot;&gt;
-		&lt;h2&gt;Some sample HTML&lt;/h2&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;column col-6&quot;&gt;
-		&lt;p&gt;Poop.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
+							&lt;div class=&quot;columns&quot;&gt;
+								&lt;div class=&quot;column col-6&quot;&gt;
+									&lt;h2&gt;Some sample HTML&lt;/h2&gt;
+								&lt;/div&gt;
+								&lt;div class=&quot;column col-6&quot;&gt;
+									&lt;p&gt;Poop.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
 						</pre>
 					</div>
 					<div class="column col-6">
 						<pre class="line-numbers"><code class="language-html">
 						&lt;p&gt;&lt;code&gt;Here's inline code formatting&lt;/code&gt;.&lt;/p&gt;
 						&lt;pre data-lang=&quot;html&quot;&gt;
-		&amp;lt;div class=&amp;quot;columns&amp;quot;&amp;gt;
-			&amp;lt;div class=&amp;quot;column col-6&amp;quot;&amp;gt;
-				&amp;lt;h2&amp;gt;Some sample HTML&amp;lt;/h2&amp;gt;
-			&amp;lt;/div&amp;gt;
-			&amp;lt;div class=&amp;quot;column col-6&amp;quot;&amp;gt;
-				&amp;lt;p&amp;gt;Poop.&amp;lt;/p&amp;gt;
-			&amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
+						&amp;lt;div class=&amp;quot;columns&amp;quot;&amp;gt;
+							&amp;lt;div class=&amp;quot;column col-6&amp;quot;&amp;gt;
+								&amp;lt;h2&amp;gt;Some sample HTML&amp;lt;/h2&amp;gt;
+							&amp;lt;/div&amp;gt;
+							&amp;lt;div class=&amp;quot;column col-6&amp;quot;&amp;gt;
+								&amp;lt;p&amp;gt;Poop.&amp;lt;/p&amp;gt;
+							&amp;lt;/div&amp;gt;
+						&amp;lt;/div&amp;gt;
 						&lt;/pre&gt;
 						</code></pre>
 					</div>
@@ -1686,7 +1705,7 @@
 				<div class="columns">
 					<div class="column col-6">
 						<figure class="figure">
-							<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-responsive rounded">
+							<img src="http://www.egggeo.com/wp-content/uploads/2013/08/Parallax-Bg1.jpg" alt="" class="img-responsive s-rounded">
 							<figcaption class="figure-caption text-center">Some image I found online</figcaption>
 						</figure>
 					</div>
@@ -2345,19 +2364,19 @@
 							<code>hide-xs</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2365,19 +2384,19 @@
 							<code>hide-sm</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2385,19 +2404,19 @@
 							<code>hide-md</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2405,19 +2424,19 @@
 							<code>hide-lg</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2425,19 +2444,19 @@
 							<code>hide-xl</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 					</tr>
 				</table>
@@ -2471,19 +2490,19 @@
 							<code>hide-xs</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2491,19 +2510,19 @@
 							<code>hide-sm</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2511,19 +2530,19 @@
 							<code>hide-md</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2531,19 +2550,19 @@
 							<code>hide-lg</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm"><i class="icon icon-cross"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle"><i class="icon icon-cross"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -2551,19 +2570,19 @@
 							<code>hide-xl</code>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 						<td>
-							<a href="" class="btn btn-action circle btn-sm btn-success"><i class="icon icon-check"></i></a>
+							<a href="" class="btn btn-action btn-sm s-circle btn-success"><i class="icon icon-check"></i></a>
 						</td>
 					</tr>
 				</table>
@@ -2591,7 +2610,7 @@
 						<a href="..." class="btn btn-link">GitHub</a>
 					</section>
 					<section class="navbar-center p-2">
-						<button class="btn btn-primary circle"><i class="icon icon-edit"></i></button>
+						<button class="btn btn-primary s-circle"><i class="icon icon-edit"></i></button>
 					</section>
 					<section class="navbar-section p-2">
 						<div class="input-group input-inline">
@@ -2626,6 +2645,91 @@
 		<br>
 
 
+		<!-- Navbar -->
+		<div class="columns">
+			<div class="column col-2 text-right orange">
+				<h3 id="Hero">Hero</h3>
+			</div>
+			<div class="divider-vert"></div>
+			<div class="column col-9">
+				<div class="columns">
+					<div class="column col-6">
+						<div class="hero bg-gray">
+							<div class="hero-body">
+								<h1>Hero example h1 title</h1>
+								<p>Hero example paragraph text.</p>
+							</div>
+						</div>
+					</div>
+					<div class="column col-6">
+						<p>The Hero container shows key featured content or information. Hero containers can also use standard background color classes and have a <code>hero-sm</code> and <code>hero-lg</code> classes for additional spacing options</p>
+						<pre class="line-numbers"><code class="lang-html">
+						&lt;div class=&quot;hero bg-gray&quot;&gt;
+							&lt;div class=&quot;hero-body&quot;&gt;
+								&lt;h1&gt;Hero example h1 title&lt;/h1&gt;
+								&lt;p&gt;Hero example paragraph text.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;hero bg-primary hero-sm&quot;&gt;
+							&lt;div class=&quot;hero-body&quot;&gt;
+								&lt;h1&gt;Hero using the &lt;code&gt;hero-sm&lt;/code&gt; class&lt;/h1&gt;
+								&lt;p&gt;Hero example paragraph text.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;hero bg-warning hero-lg&quot;&gt;
+							&lt;div class=&quot;hero-body&quot;&gt;
+								&lt;h1&gt;Hero using the &lt;code&gt;hero-lg&lt;/code&gt; class&lt;/h1&gt;
+								&lt;p&gt;Hero example paragraph text.&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						</code></pre>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column col-6">
+						<div class="hero bg-primary hero-sm">
+							<div class="hero-body">
+								<h1>Hero using the <code>hero-sm</code> class</h1>
+								<p>Hero example paragraph text.</p>
+							</div>
+						</div>
+					</div>
+					<div class="column col-6">
+						<pre class="line-numbers"><code class="lang-html">
+							&lt;div class=&quot;hero bg-primary hero-sm&quot;&gt;
+								&lt;div class=&quot;hero-body&quot;&gt;
+									&lt;h1&gt;Hero using the &lt;code&gt;hero-sm&lt;/code&gt; class&lt;/h1&gt;
+									&lt;p&gt;Hero example paragraph text.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						</code></pre>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column col-6">
+						<div class="hero bg-warning hero-lg">
+							<div class="hero-body">
+								<h1>Hero using the <code>hero-lg</code> class</h1>
+								<p>Hero example paragraph text.</p>
+							</div>
+						</div>
+					</div>
+					<div class="column col-6">
+						<pre class="line-numbers"><code class="lang-html">
+							&lt;div class=&quot;hero bg-warning hero-lg&quot;&gt;
+								&lt;div class=&quot;hero-body&quot;&gt;
+									&lt;h1&gt;Hero using the &lt;code&gt;hero-lg&lt;/code&gt; class&lt;/h1&gt;
+									&lt;p&gt;Hero example paragraph text.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
 
 
 
@@ -5043,17 +5147,17 @@
 				<div class="columns">
 					<div class="column col-3">
 						<!-- rounded element -->
-						<div class="rounded bg-primary text-center" style="height:100px;width:100px">rounded</div>
+						<div class="s-rounded bg-primary text-center" style="height:100px;width:100px">s-rounded</div>
 						<br>
 						<!-- circle element -->
-						<div class="circle bg-dark text-center" style="height:100px;width:100px">circle</div>
+						<div class="s-circle bg-dark text-center" style="height:100px;width:100px">s-circle</div>
 					</div>
 					<div class="column col-9">
 						<pre class="line-numbers"><code class="lang-html">
 							&lt;!-- rounded element --&gt;
-							&lt;div class=&quot;rounded bg-primary&quot;&gt;rounded&lt;/div&gt;
+							&lt;div class=&quot;s-rounded bg-primary&quot;&gt;rounded&lt;/div&gt;
 							&lt;!-- circle element --&gt;
-							&lt;div class=&quot;circle bg-dark&quot;&gt;circle&lt;/div&gt;
+							&lt;div class=&quot;s-circle bg-dark&quot;&gt;circle&lt;/div&gt;
 						</code></pre>
 					</div>
 				</div>
@@ -5171,6 +5275,43 @@
 			<h2 id="experimentals">Experimentals</h2>
 			<p>To use these, need to include the <code>spectre-exp.css</code> CSS file!</p>
 		</div>
+
+
+		<!-- 360-Degree viewer -->
+		<div class="columns">
+			<div class="column col-2 text-right purple">
+				<h3 id="view360">360 viewer</h3>
+			</div>
+			<div class="divider-vert"></div>
+			<div class="column col-9">
+				<div class="columns">
+					<div class="column col-6">
+						<div class="viewer-360">
+							<input class="viewer-slider slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
+							<figure class="viewer-image" style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;"></figure>
+						</div>
+					</div>
+					<div class="column col-6">
+						<p>You'll need to use your own product image sprite (all angles captured in one image) and set the attribute <code>max</code> to the image numbers to use this component. The default number of frames in CSS sprite are <code>36</code>.</p>
+						<pre class="line-numbers"><code class="lang-html">
+						&lt;div class=&quot;viewer-360&quot;&gt;
+							&lt;input class=&quot;viewer-slider slider&quot; type=&quot;range&quot; min=&quot;1&quot; max=&quot;36&quot; value=&quot;1&quot; oninput=&quot;this.setAttribute('value', this.value);&quot;&gt;
+							&lt;figure class=&quot;viewer-image&quot; style=&quot;background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;&quot;&gt;&lt;/figure&gt;
+						&lt;/div&gt;							
+						</code></pre>
+						<p>Modifying the default 36 frames can be done in <code>src/_viewer-360.scss</code> and re-compiling the CSS using <code>Gulp</code></p>
+						<pre class="line-numbers"><code class="lang-scss">
+							@include viewer-slider-size(36);
+							@include viewer-slider-size(30);
+						</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+
 
 		<!-- Autocomplete -->
 		<div class="columns">
@@ -6289,7 +6430,7 @@
 		<!-- This is just here for pretty syntax-highlighting. It's not part of Spectre.css -->
 		<script src="prism.js"></script>
 
-		<a href="#top" class="btn btn-primary btn-action back-to-top-button btn-lg tooltip tooltip-right" data-tooltip="Go back to top of page"><i class="icon icon-upward"></i></a>
+		<a href="#top" class="btn btn-success btn-action back-to-top-button btn-lg tooltip tooltip-right" data-tooltip="Go back to top of page"><i class="icon icon-upward"></i></a>
 
 	</body>
 </html>

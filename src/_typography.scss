@@ -6,11 +6,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
-  font-weight: 500;
+  color: $gray-color-dark;
+  font-weight: lighter;
   line-height: 1.2;
   margin-bottom: .5em;
   margin-top: 0;
+  letter-spacing: 0.05em
 }
 .h1,
 .h2,
@@ -18,31 +19,31 @@ h6 {
 .h4,
 .h5,
 .h6 {
-  font-weight: 500;
+  font-weight: lighter;
 }
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h2,
 .h2 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 h3,
 .h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 h4,
 .h4 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 h5,
 .h5 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 h6,
 .h6 {
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
 // Paragraphs

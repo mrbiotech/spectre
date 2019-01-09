@@ -210,14 +210,9 @@
 
 .docs-content .code .hljs-title,
 .docs-content .code .hljs-class,
-<<<<<<< HEAD
-.docs-content .code .hljs-string {
-  color: #1d549f;
-=======
 .docs-content .code .hljs-string,
 .docs-content .code .hljs-number {
-  color: #5755d9;
->>>>>>> 2513e31f732794e54f62edaf3fde9fe5ab129dfe
+  color: #1d549f;
 }
 
 .docs-content .code .hljs-name,
@@ -296,12 +291,8 @@
 }
 
 .docs-brand {
-<<<<<<< HEAD
   color: #1d549f;
-=======
-  color: #5755d9;
   height: 2rem;
->>>>>>> 2513e31f732794e54f62edaf3fde9fe5ab129dfe
   left: 1.5rem;
   position: fixed;
   top: .85rem;
@@ -625,10 +616,6 @@
   outline: 0;
 }
 
-.searchbox__input::-webkit-input-placeholder {
-  color: #aaa;
-}
-
 .searchbox__input:-ms-input-placeholder {
   color: #aaa;
 }
@@ -786,7 +773,7 @@
 
 .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion.suggestion-layout-simple,
 .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
-  background-color: rgba(87, 85, 217, .05);
+  background-color: rgba(29, 84, 159, .05);
 }
 
 .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {
@@ -811,22 +798,22 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-  background: rgba(87, 85, 217, .1);
-  color: #5755d9;
+  background: rgba(29, 84, 159, .1);
+  color: #1d549f;
   padding: .1em .05em;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl0 .algolia-docsearch-suggestion--highlight,
 .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight {
   background: inherit;
-  box-shadow: inset 0 -2px 0 0 rgba(87, 85, 217, .8);
+  box-shadow: inset 0 -2px 0 0 rgba(29, 84, 159, .8);
   color: inherit; 
   padding: 0 0 1px;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
   background: inherit;
-  box-shadow: inset 0 -2px 0 0 rgba(87, 85, 217, .8);
+  box-shadow: inset 0 -2px 0 0 rgba(29, 84, 159, .8);
   color: inherit; 
   padding: 0 0 1px;
 }
